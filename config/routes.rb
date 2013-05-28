@@ -6,8 +6,9 @@ BasicPhotogur::Application.routes.draw do
 
   match 'pictures' => 'pictures#index'
 
-  match 'pictures/new' => 'pictures#new'
-  match 'pictures/:id' => 'pictures#show', as: "picture"
+  match 'pictures/new'      => 'pictures#new'
+  match 'pictures/:id'      => 'pictures#show', as: "picture"
+  match 'pictures/:id/edit' => 'pictures#edit', as: "edit_picture"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
