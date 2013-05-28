@@ -1,5 +1,7 @@
 BasicPhotogur::Application.routes.draw do
 
+  root :to => "pictures#index"
+
   post 'pictures'  => "pictures#create"
 
   match 'pictures' => 'pictures#index'
